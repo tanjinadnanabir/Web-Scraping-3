@@ -17,7 +17,7 @@ driver.get("https://www.google.com/maps/search/laptop+shop+near+mirpur/@23.81391
 time.sleep(5)
 
 for _ in range(10):
-    driver.execute_script("document.querySelector('div[role=\"main\"] div[aria-label]').scrollBy(0, 500)")
+    driver.execute_script("document.querySelector('div[role=\"main\"] div[aria-label]').scrollBy(0, 1500)")
     time.sleep(5)
 
 listings = driver.find_elements(By.CSS_SELECTOR, '.Nv2PK')
